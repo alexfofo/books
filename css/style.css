@@ -1,11 +1,32 @@
 .footer{
-	position: relative;
-	bottom: 0px;
-	width: 100%;
-	height: 3em;
 	background-color: rgb(240, 240, 240);
 	padding-top: 1em;
 }
+
 .content-zone{
 	min-height: 600px;
+}
+
+/* element de liste de posts (page liting-post) */
+
+.post {
+	display: block;
+}
+
+.post:hover,
+.post:focus {
+	text-decoration: none;
+}
+
+.post:hover .panel,
+.post:focus .panel{
+	border-color: #2a6496;
+}
+
+.post h2{
+	margin-top: 0;
+}
+
+.post--meta {
+	color: gray;
 }

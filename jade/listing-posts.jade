@@ -1,0 +1,47 @@
+doctype html
+html
+	head
+		include templates/head.jade
+		title listing-posts
+		- var author = {"name" : "John Smith"};
+		- var category = "Thriller";
+		- var posts = [{ "title":"Bonjour Hello", "date":"12/03/2013","author":"John S.","url":"#"},{ "title":"Guten Tag", "date":"11/08/2013","author":"Mark L.","url":"#"}];
+	body
+		include templates/navbar.jade
+		.container.content-zone
+			.row
+				.col-md-8.col-xs-12
+					.row
+						.col-md-12.col-xs-12
+							.page-header
+								h1 Catégorie : #{category}
+						.col-md-12.col-xs-12
+							each post in posts
+								include templates/post_link.jade
+				.col-md-4.col-xs-12
+					.row
+						.col-md-12.col-xs-12
+							include templates/sidebar.jade	
+			.row
+				.col-md-6.col-xs-12
+					include templates/fiche_auteur.jade
+		include templates/footer.jade
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

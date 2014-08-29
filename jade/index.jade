@@ -1,0 +1,28 @@
+doctype html
+html
+	head
+		include templates/head.jade
+		title Books
+		- var posts = [{ "title":"Bonjour Hello", "date":"12/03/2013","author":"John S.","url":"#"},{ "title":"Guten Tag", "date":"11/08/2013","author":"Mark L.","url":"#"}];
+	body
+		include templates/navbar.jade
+
+		.container.content-zone
+			.row
+				.col-md-12.col-xs-12
+					h1: b Books
+					h2 Catégories :
+					ul.categorie-list
+						li: a(href="#") Azerty
+						li: a(href="#") Qwerty
+						li: a(href="#") Coucou
+						li: a(href="#") Bonjour Lorem ipsum dolor sit amet
+			.row
+				.col-md-12.col-xs-12
+					h2 Dernier post :
+					- var post = posts[0];
+					include templates/post_link.jade
+
+
+
+		include templates/footer.jade

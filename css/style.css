@@ -30,3 +30,38 @@
 .post--meta {
 	color: gray;
 }
+
+/* liste de categories */
+
+.categorie-list{
+	list-style: none;
+	padding-left: 0;
+}
+
+.categorie-list li{
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.categorie-list a:link,
+.categorie-list a:visited{
+	display: block;
+	border: 1px solid #ddd;
+	padding: 15px;
+	border-radius: 4px;
+	font-size: 20px;
+}
+
+
+
+.categorie-list a:hover,
+.categorie-list a:focus,
+.categorie-list a:active{
+	border-color: #2a6496;
+	text-decoration: none;
+}
+
+
+
+
